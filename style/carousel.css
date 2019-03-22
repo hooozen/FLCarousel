@@ -1,0 +1,148 @@
+.fl-carousel {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.fl-carousel__container {
+  position: relative;
+  height: 300px;
+}
+
+.fl-carousel__arrow {
+  background-color: #1f2d3d1c;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  height: 36px;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  width: 36px;
+  z-index: 10;
+}
+
+.fl-carousel__arrow--left {
+  left: 16px;
+}
+
+.fl-carousel__arrow--right {
+  right: 16px;
+}
+
+.fl-carousel__arrow:hover {
+  cursor: pointer;
+}
+
+.fl-carousel__arrow i {
+    cursor: pointer
+}
+
+.fl-carousel__indicators {
+    position: absolute;
+    list-style: none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 2
+}
+
+.fl-carousel__indicators--outside {
+    bottom: 26px;
+    text-align: center;
+    position: static;
+    transform: none
+}
+
+
+.fl-carousel__indicators--outside .fl-carousel__indicator:hover button {
+    opacity: .64
+}
+
+.fl-carousel__indicators--outside button {
+    background-color: #c0c4cc;
+    opacity: .24
+}
+
+.fl-carousel__indicators--labels {
+    left: 0;
+    right: 0;
+    transform: none;
+    text-align: center
+}
+
+.fl-carousel__indicators--labels .fl-carousel__button {
+    height: auto;
+    width: auto;
+    padding: 2px 18px;
+    font-size: 12px
+}
+
+.fl-carousel__indicators--labels .fl-carousel__indicator {
+    padding: 6px 4px
+}
+
+.fl-carousel__indicator {
+    display: inline-block;
+    background-color: transparent;
+    padding: 12px 4px;
+    cursor: pointer
+}
+
+.fl-carousel__indicator:hover button {
+    opacity: .72
+}
+
+.fl-carousel__indicator.is-active button {
+    opacity: 1
+}
+
+.fl-carousel__button {
+    display: block;
+    opacity: .48;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: .3s
+}
+
+.carousel-arrow-left-enter,.carousel-arrow-left-leave-active {
+    transform: translateY(-50%) translateX(-10px);
+    opacity: 0
+}
+
+.carousel-arrow-right-enter,.carousel-arrow-right-leave-active {
+    transform: translateY(-50%) translateX(10px);
+    opacity: 0
+}
+
+.fl-icon-arrow {
+  border: 3px solid #fff;
+  border-width: 3px 3px 0 0;
+  border-radius: 3px;
+  height: 10px;
+  margin: 0 auto;
+  transform: translateX(-25%);
+  width: 10px;
+}
+
+.fl-icon-arrow-left {
+  transform: rotateZ(-135deg);
+}
+
+.fl-icon-arrow-right {
+  transform: rotateZ(45deg);
+}
