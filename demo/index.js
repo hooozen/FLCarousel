@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import App from './app.vue';
-import { Carousel, CarouselItem } from './dist/main.js';
+import FL from '../dist/main.js';
+
+Vue.use(FL.Carousel);
+Vue.use(FL.CarouselItem);
 
 new Vue({
   data: {
@@ -9,4 +12,3 @@ new Vue({
   render: h => h(App),
 }).$mount('#app');
 
-Vue.install(Carousel, CarouselItem);
