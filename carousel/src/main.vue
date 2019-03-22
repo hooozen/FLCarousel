@@ -90,7 +90,7 @@ export const removeResizeListener = function(element, fn) {
 };
 
 export default {
-  name: 'ElCarousel',
+  name: 'FlCarousel',
 
   props: {
     initialIndex: {
@@ -207,7 +207,7 @@ export default {
     },
 
     updateItems() {
-      this.items = this.$children.filter(child => child.$options.name === 'ElCarouselItem');
+      this.items = this.$children.filter(child => child.$options.name === 'FlCarouselItem');
     },
 
     resetItemPosition(oldIndex) {
@@ -246,7 +246,7 @@ export default {
       index = Number(index);
       if (isNaN(index) || index !== Math.floor(index)) {
         process.env.NODE_ENV !== 'production' &&
-        console.warn('[Element Warn][Carousel]index must be an integer.');
+        console.warn('[Warn][Carousel]index must be an integer.');
         return;
       }
       let length = this.items.length;

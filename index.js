@@ -1,9 +1,7 @@
-import Vue from 'vue';
-import App from './app.vue';
+import Carousel from './carousel';
+import CarouselItem from './carousel-item';
 
-new Vue({
-  data: {
-    message: 'Hello Vue!'
-  },
-  render: h => h(App),
-}).$mount('#app');
+module.exports = {
+  Carousel,
+  CarouselItem,
+};

@@ -30,7 +30,7 @@
   import '../../style/carousel-item.css';
 
   export default {
-    name: 'ElCarouselItem',
+    name: 'FlCarouselItem',
 
     props: {
       name: String,
@@ -59,10 +59,8 @@
       processIndex(index, activeIndex, length) {
         const halfLenght = Math.floor(length / 2);
         if (activeIndex - index > halfLenght) {
-          console.log(index, activeIndex);
           return index + length;
         } else if (index - activeIndex > halfLenght) {
-          console.log(index, activeIndex);
           return index - length;
         }
         return index;
@@ -104,7 +102,6 @@
         }
         if (index !== activeIndex && length > 2 && this.$parent.loop) {
           index = this.processIndex(index, activeIndex, length);
-          console.log(index);
         }
         if (this.$parent.type === 'card') {
           this.totalLayer = this.$parent.visibleLayer;

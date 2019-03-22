@@ -8,17 +8,6 @@
   </div>
 </template>
 
-<script>
-  import FlCarousel from './carousel/src/main.vue';
-  import FlCarouselItem from './carousel/src/item.vue';
-
-  export default {
-    components: {
-      FlCarousel,
-      FlCarouselItem,
-    } 
-  }
-</script>
 <style>
   .demo .fl-carousel__item:nth-child(2n) {
     background: #99a9bf;
